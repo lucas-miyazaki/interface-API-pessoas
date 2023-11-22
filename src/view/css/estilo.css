@@ -61,22 +61,27 @@ input {
 .espaco2 {
     height: 10%;
 }
+
 p {
     font-size: 10px;
 }
+
 .cadastro_usuario {
     margin-top: 5%;
     display: flex;
     text-align: center;
     justify-content: center;
 }
+
 h1 {
     font-size: 200%;
 }
+
 .cadastrar {
     margin-top: 1%;
     margin-left: 38%;
 }
+
 input.cadastrar2 {
     color: var(--cor02);
     background-color: var(--cor05);
@@ -85,5 +90,5 @@ input.cadastrar2 {
     justify-content: center;
     width: 270%;
     height: 150%;
-    
+
 }
