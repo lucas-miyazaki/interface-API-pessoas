@@ -18,48 +18,67 @@
             <div class="cadastro_usuario">
                 <h1>Cadastro do Usuário</h1>
             </div>
-            <div class="espaco"></div>
-            <div class="nome_div">
-                <div class="nome">
-                    <h2>Nome:</h2>
-                    <input type="text" placeholder="Nome Completo" id="nome_Usuario">
-                </div>
-            </div>
-            <div class="inputs_cadastro">
-                <div class="l1">
-                    <div class="cpf">
-                        <h2>CPF:</h2>
-                        <input type="text" placeholder="000.000.000-00" id="cpf_Usuario">
-                    </div>
-                    <div class="data">
-                        <h2>Data de Nascimento:</h2>
-                        <input type="date" id="nascimento_Usuario">
+            <form>
+                <div class="espaco"></div>
+                <div class="nome_div">
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" placeholder="Nome Completo" id="nome_Usuario" required minlength="5"
+                            maxlength="100">
                     </div>
                 </div>
-                <div class="l1">
-                    <div class="telefone">
-                        <h2>Telefone:</h2>
-                        <input type="tel" placeholder="(00) 0000-0000" id="telefone_Usuario">
+                <div class="inputs_cadastro">
+
+                    <div class="l1">
+                        <div class="cpf">
+                            <label for="cpf_Usuario">CPF:</label>
+                            <input type="text" placeholder="000.000.000-00" id="cpf_Usuario" required minlength="11"
+                                maxlength="14">
+                        </div>
+                        <div class="espaco3"></div>
+                        <div class="data">
+                            <label for="nascimento_Usuario">Data de Nascimento:</label>
+                            <input type="date" id="nascimento_Usuario">
+                        </div>
+
                     </div>
-                    <div class="endereco">
-                        <h2>Endereço:</h2>
-                        <input type="text" placeholder="Endereço completo" id="endereco_Usuario">
+                    <div class="espaco3"></div>
+                    <div class="l1">
+                        <div class="telefone">
+                            <label for="telefone_Usuario">Telefone:</label>
+                            <input type="tel" placeholder="(00) 0000-0000" id="telefone_Usuario" required minlength="10"
+                                maxlength="19">
+                        </div>
+                        <div class="espaco3"></div>
+                        <div class="endereco">
+                            <label for="endereco_Usuario">Endereço:</label>
+                            <input type="text" placeholder="Endereço completo" id="endereco_Usuario" required
+                                minlength="3" maxlength="50">
+                        </div>
+                    </div>
+                    <div class="espaco2"></div>
+                    <div class="l1">
+                        <div class="peso">
+                            <label for="peso_Usuario">Peso:</label>
+                            <input type="text" placeholder="000.0 kg" id="peso_Usuario" required minlength="1"
+                                maxlength="8">
+                        </div>
+                        <div class="espaco3"></div>
+                    </div>
+                    <div class="l1">
+                        <div class="altura">
+                            <label for="altura_Usuario">Altura:</label>
+                            <input type="text" placeholder="000cm" id="altura_Usuario" required minlength="2"
+                                maxlength="5">
+                        </div>
+                    </div>
+                    <div class="cadastrar">
+                        <input type="button" value="Cadastrar" class="cadastrar2" onclick="Cadastrar()">
                     </div>
                 </div>
-                <div class="l1">
-                    <div class="peso">
-                        <h2>Peso:</h2>
-                        <input type="text" placeholder="00.0kg" id="peso_Usuario">
-                    </div>
-                    <div class="altura">
-                        <h2>Altura:</h2>
-                        <input type="text" placeholder="000cm" id="altura_Usuario">
-                    </div>
-                </div>
-                <div class="cadastrar">
-                    <input type="button" value="Cadastrar" class="cadastrar2" onclick="Cadastrar()">
-                </div>
-            </div>
+
+            </form>
+
         </div>
     </section>
     <script src="js/request.js"></script>
